@@ -1,0 +1,5 @@
+--What is the undiscounted subtotal for each Order (identified by OrderID).
+select OrderId, sum(Quantity * UnitPrice)
+from [order details]
+group by OrderId
+
